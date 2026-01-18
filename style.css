@@ -1,4 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* google font use  */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 .inter{
   font-family: "Inter", sans-serif;
+}
+.menu-section{
+    background-color: #1A0B2E;
+}
+.menu-bar{
+    max-width: 1600px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+}
+.logo{
+    width: 100px;
+    height: 100px;
+    /* background: linear-gradient(to right, #FD2FA4, #540D5B); */
+}
+.logo img::after{
+    background: linear-gradient(to right, #FD2FA4, #540D5B);
+}
+.logo img{
+    width: 100%;
+}
+.menu-style{
+    display: flex;
+    gap: 32px;
+    /* margin: 0 auto; */
+    /* align-items: center; */
+    /* text-align: center; */
+    justify-content: center;
+}
+.menu-list{
+    list-style: none;
+    /* margin: 0 auto; */
+    justify-content: center;
+    padding: 40px 0px;
+}
+.menu-link{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 500;
+}
+.bouton{
+    /* padding: 20px 0px; */
+    margin: 20px 0px;
+    display: flex;
+    justify-content: flex-end;
+}
+#btn{
+    background: linear-gradient(45deg,#FFEB3B,#E91E63,#9C27B0);
+    padding: 20px 30px;
+    border-radius: 50px;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #FFFFFF;
+    display: inline-flex;
+    gap: 10px;
 }
