@@ -58,4 +58,52 @@
     font-weight: 500;
     color: #FFFFFF;
 }
+.banar-section{
+    background: url(./assets/hero-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.banar-contant{
+    width: 550px;
+    margin: 0 auto;
+    padding: 100px;
+}
+.banar-img{
+    /* width: 250px; */
+    background: url(./assets/hero-circle.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    padding: 70px;
+    background-size: contain;
+}
+.banar-img img{
+    width: 200px;
+}
+.content{
+    text-align: center;
+    margin-top: 40px;
+}
+.banar-taitle{
+    font-size: 80px;
+    font-weight: 800;
+    color: #FFFFFF;
+}
+.banar-tex{
+    font-size: 16px;
+    color: #FFFFFF;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+#btn-2{
+    /* background: linear-gradient(45deg,#FFEB3B,#E91E63,#9C27B0); */
+    padding: 20px 30px;
+    border-radius: 50px;
+    border: 1px solid green;
+    font-size: 16px;
+    font-weight: 600;
+    color: green;
+    background-color: #1A0B2E;
+}
 
