@@ -86,30 +86,35 @@
     background-position: center;
 }
 .banar-contant{
-    max-width: 550px;
+    max-width: 850px;
     margin: 0 auto;
     padding: 75px 0;
 }
 .banar-img img{
     width: 100px;
+    padding: 80px;
+}
+.banar-img{
     background: url(./assets/hero-circle.png);
     background-repeat: no-repeat;
     background-position: center;
-    padding: 50px;
+    
     background-size: contain;
-}
-.banar-img{
+
+
+    width: 450px;
     position: relative;
     text-align: center;
+    margin: 0 auto;
 }
 .badge {
-    position: absolute;
+    /* position: absolute; */
     width: 70px;
     font-size: 21px;
     margin-top: 20px;
     position: relative;
-    bottom: 222px;
-    left: 53px;
+    bottom: 283px;
+    left: 106px;
     background-color: #00FF88;
     margin: 0 auto;
     border-radius: 50px;
@@ -187,10 +192,12 @@
 .singel-counting p{
     font-size: 18px;
     color: #FFFFFF;
+    margin-bottom: 50px;
 }
 /* choose section  */
 .choose-section{
-    background-color: #1A0B2E;
+    /* background-color: #1A0B2E; */
+    background-color: #230E3D;
     padding: 100px 0px;
 }
 .choose-containt{
@@ -204,7 +211,8 @@
 }
 .choose-card{
     padding: 20px;
-    background-color: #301455;
+    /* background-color: #301455; */
+    background-color: #351165;
     border-radius: 50px;
 }
 .card-1{
@@ -236,6 +244,7 @@
 /* feature section  */
 .feature-section{
     background-color: #1A0B2E;
+    padding-top: 50px;
 }
 .feature-contain{
     display: grid;
@@ -245,6 +254,7 @@
 .feature-card{
     padding: 0px 0px;
     background-color: #301455;
+    /* background-color: #1A0B2E; */
     border-radius: 50px;
 }
 .feature-card iframe{
@@ -269,12 +279,65 @@
     padding: 20px 0px;
 }
 
-
+/* footer section  */
+.footer-section{
+    background-image: url(./assets/footer-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.footer-container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.footer-logo{
+    width: 250px;
+    margin: 0 auto;
+}
+.footer-logo img{
+    width: 100%;
+}
+.footer-icons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 600px;
+    margin: 0 auto;
+}
+.footer-icons img{
+    width: 30px;
+    padding: 10px;
+}
+.icons-1{
+    display: flex;
+    margin: 0 auto;
+    width: 180px;
+}
+.icons-1 p{
+    padding: 10px 5px;
+    color: #ffffff;
+}
+.copy-right{
+    color: #FFFFFF;
+    font-size: 18px;
+    text-align: center;
+    padding: 100px 0px;
+}
 
 /* Extra Small Devices Mobile */
 @media screen and (max-width: 576px) {
     .banar-taitle, .about-title, .title {
         font-size: 36px;
+    }
+    /* .width {
+        max-width: 80%;
+        padding: 40px 0;
+    } */
+    .menu-bar {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .bouton {
+        justify-content: center;
     }
     .menu-style {
         flex-direction: column;
@@ -283,15 +346,72 @@
     .menu-list {
         padding: 10px 0;
     }
+    .banar-img{
+        width: 80%;
+    }
     .counting {
         grid-template-columns: repeat(2, 1fr);
         padding: 10px 10px;
     }
-    /* DKJFLKDSJF */
-
+    .choose-grid {
+        grid-template-columns: 1fr;
+    }
+    .card-2, .card-3, .card-4 {
+        grid-column: span 1;
+    }
+    .feature-contain {
+        grid-template-columns: 1fr;
+    }
+    .footer-icons {
+        width: 100%;
+        grid-template-columns: repeat(2,1fr);
+        gap: 1px;
+    }
+    .icons-1 {
+        margin: 0;
+        justify-content: center;
+    }
+    .footer-logo {
+        width: 150px;
+    }
+    .copy-right {
+        font-size: 16px;
+        padding: 50px 0;
+    }
 
     /* DKJDFKJDLKSF  */
     
+}
+
+@media screen and (max-width: 992px) {
+    .width {
+        max-width: 90%;
+        padding: 40px 0;
+    }
+    .menu-bar {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .bouton {
+        justify-content: center;
+    }
+    .choose-grid {
+        grid-template-columns: 1fr;
+    }
+    .card-2, .card-3, .card-4 {
+        grid-column: span 1;
+    }
+    .feature-contain {
+        grid-template-columns: 1fr;
+    }
+    .counting {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+    .footer-icons {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1px;
+    }
 }
 
 
