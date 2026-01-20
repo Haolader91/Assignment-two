@@ -98,15 +98,29 @@
     background: url(./assets/hero-circle.png);
     background-repeat: no-repeat;
     background-position: center;
-    
     background-size: contain;
-
-
     width: 450px;
     position: relative;
     text-align: center;
     margin: 0 auto;
+    overflow: hidden;
 }
+
+/* hover efect  */
+.banar-img:hover img{
+    /* transform: spin rotate(360deg) scale(1.2); */
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
 .badge {
     /* position: absolute; */
     width: 70px;
@@ -145,6 +159,7 @@
     font-weight: 600;
     color: #00FF88;
     background-color: #1A0B2E;
+    margin-top: 15px;
 }
 #btn-2 i{
     color: #00FF88;
@@ -346,12 +361,18 @@
     .menu-list {
         padding: 10px 0;
     }
-    .banar-img{
+    /* .banar-img{
         width: 80%;
-    }
+    } */
     .counting {
         grid-template-columns: repeat(2, 1fr);
         padding: 10px 10px;
+    }
+    .singel-counting h2{
+    font-size: 35px;
+    font-weight: 600;
+    padding: 10px;
+    color: #00FF88;
     }
     .choose-grid {
         grid-template-columns: 1fr;
